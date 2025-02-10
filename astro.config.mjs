@@ -1,8 +1,8 @@
-// @ts-check
-import { defineConfig } from 'astro/config';
+
+import { defineConfig } from 'astro';
 
 export default defineConfig({
-  output: 'static',  // Make sure this is 'static' or 'dist' depending on your setup
-  adapter: 'static', // Use the default static adapter
-  base: '/blog/',    // Ensure your base path is correctly set
+  site: 'https://dhammanana.github.io',
+  base: '/blog',
+  output: 'static'
 });

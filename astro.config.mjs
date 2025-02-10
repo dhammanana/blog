@@ -5,8 +5,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-	integrations: [mdx(), sitemap()],
-	output: 'static',
-	adapter: staticAdapter(),
-	base: '/blog/', 
+	  output: 'static',
+	  adapter: 'static', // Use the built-in static adapter
+	  base: '/blog/', // Ensure 
 });

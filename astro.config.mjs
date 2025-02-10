@@ -1,11 +1,8 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
-import mdx from '@astrojs/mdx';
-import sitemap from '@astrojs/sitemap';
 
-// https://astro.build/config
 export default defineConfig({
-	  output: 'static',
-	  adapter: 'static', // Use the built-in static adapter
-	  base: '/blog/', // Ensure 
+  output: 'static',  // Make sure this is 'static' or 'dist' depending on your setup
+  adapter: 'static', // Use the default static adapter
+  base: '/blog/',    // Ensure your base path is correctly set
 });
